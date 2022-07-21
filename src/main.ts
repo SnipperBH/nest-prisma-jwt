@@ -4,6 +4,7 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+
   // Pipes
   app.useGlobalPipes(
     new ValidationPipe({
@@ -12,6 +13,8 @@ async function bootstrap() {
       forbidNonWhitelisted: true,
     }),
   );
+
   await app.listen(3000);
 }
+
 bootstrap();
