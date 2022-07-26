@@ -13,8 +13,8 @@ exports.AuthService = void 0;
 const common_1 = require("@nestjs/common");
 const jwt_1 = require("@nestjs/jwt");
 const bcrypt = require("bcrypt");
-const unauthorized_error_1 = require("./errors/unauthorized.error");
 const user_service_1 = require("../user/user.service");
+const unauthorized_error_1 = require("./errors/unauthorized.error");
 let AuthService = class AuthService {
     constructor(jwtService, userService) {
         this.jwtService = jwtService;

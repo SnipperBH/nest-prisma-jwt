@@ -26,7 +26,6 @@ let UserController = class UserController {
     }
 };
 __decorate([
-    (0, is_public_decorator_1.IsPublic)(),
     (0, common_1.Post)(),
     __param(0, (0, common_1.Body)()),
     __metadata("design:type", Function),
